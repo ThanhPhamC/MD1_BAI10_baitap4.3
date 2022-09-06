@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-<style>
-    body{
-        min-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-</style>
+<!--<style>-->
+<!--    body{-->
+<!--        min-height: 100vh;-->
+<!--        display: flex;-->
+<!--        align-items: center;-->
+<!--        justify-content: center;-->
+<!--    }-->
+<!--</style>-->
 </head>
 <body>
 <script>
@@ -50,6 +50,36 @@
     //     document.write("<br>")
     // }
     // document.write("</div  >")
+
+    //     document.write('<div >')
+    // for (let i = 1; i<=7; i++){
+    //     for (let j=0; j<21; j++){
+    //         let sao="*"
+    //     if (i==1|| i==7){
+    //         document.write(sao)
+    //     }else {
+    //         if (j==0 ){
+    //             document.write(sao)
+    //         }else if (j==20) {  document.write(sao)}
+    //     }
+    //     }document.write("<br>")
+    // }
+    // document.write("</div  >")
+
+var sao="*";
+let bang;
+bang="<table border='1' width='300' cellpadding='3' cellspacing='0'>"
+    for (let i=0; i<=7;i++){
+    bang = bang +  "<tr>"
+        for ( let j=0; j<10; j++){
+            if (i==0||i==7){
+               bang=bang+ "<td>"+sao+"</td>";
+            } else if (j==9 ) {  bang=bang+ "<td>"+sao+"</td>";}
+                else if (j==1 ) {  bang=bang+ "<td  >"+sao+"</td>";}
+
+        }bang= bang + "</tr>";
+    }bang=bang+ "</table>"
+document.write(bang)
 
 </script>
 </body>
